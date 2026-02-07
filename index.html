@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SalesIQ Bot Test Website</title>
+</head>
+<body>
+
+  <h2>SalesIQ Bot Test Website</h2>
+  <p>This page is only for testing Forward to Operator.</p>
+
+  <!-- Zoho SalesIQ Widget -->
+  <script>
+    window.$zoho = window.$zoho || {};
+    $zoho.salesiq = $zoho.salesiq || {
+      ready: function () {
+        console.log("SalesIQ Loaded Successfully");
+        // Force show widget (for testing)
+        $zoho.salesiq.floatwindow.visible('show');
+      }
+    };
+  </script>
+
+  <script
+    id="zsiqscript"
+    src="https://salesiq.zohopublic.in/widget?wc=siqdd22e07da4a208a34d052f1a1288c4011ed0b221c2e450ec88544149f570bde4"
+    defer>
+  </script>
+
+</body>
+</html>
+
